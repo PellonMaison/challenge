@@ -42,11 +42,11 @@ function HomeScreen() {
       // setProducts(result.data);
     };
     fetchData();
-  }, []);
+  }, [])
   return (
     <div>
       <Helmet>
-        <title>Amazona</title>
+        <title>ITcrowd</title>
       </Helmet>
       <h1>Featured Products</h1>
       <div className="products">

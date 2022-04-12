@@ -1,3 +1,4 @@
+
 import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import Order from '../models/orderModel.js';
@@ -142,7 +143,7 @@ orderRouter.put(
         .messages()
         .send(
           {
-            from: 'Amazona <amazona@mg.yourdomain.com>',
+            from: 'Mariano <itcrowd@mg.yourdomain.com>',
             to: `${order.user.name} <${order.user.email}>`,
             subject: `New order ${order._id}`,
             html: payOrderEmailTemplate(order),
